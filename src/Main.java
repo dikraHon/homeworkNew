@@ -9,5 +9,7 @@ public class Main {
         System.out.println(book1.equals(book));
         String str = new Scanner(System.in).nextLine().toUpperCase();
         Month.JUNE.isWinter(str);
+        Author author = new Author("asd", "Asd", 123);
+        System.out.println(author.name + author.age);
     }
 }
