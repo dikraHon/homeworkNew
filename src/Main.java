@@ -4,9 +4,9 @@ public class Main {
         Clothing clothing = new Clothing();
         Food food = new Food();
 
-       System.out.println("electronics: " + electronics.getFinalPrice(90));
-       System.out.println("closing: " + clothing.getFinalPrice(90));
-       System.out.println("food: " + food.getFinalPrice(90));
+        System.out.println("electronics: " + electronics.getFinalPrice(90));
+        System.out.println("closing: " + clothing.getFinalPrice(90));
+        System.out.println("food: " + food.getFinalPrice(90));
     }
 }
 
