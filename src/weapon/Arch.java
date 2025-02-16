@@ -1,8 +1,10 @@
+package weapon;
+
 import java.util.Random;
 
-public class Arch extends Weapon{
-    Arch(int damage, Random r) {
-        super(damage, r);
+public class Arch extends Weapon {
+    public Arch(int damage, Random random) {
+        super(damage, random);
     }
     @Override
     public int getDamage() {

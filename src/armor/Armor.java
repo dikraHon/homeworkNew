@@ -1,9 +1,11 @@
-abstract class Armor {
+package armor;
 
-    private int armorRating;
+public class Armor {
+
+    private final int armorRating;
     private int durability;
 
-    Armor(int armorRating, int durability){
+    public Armor(int armorRating, int durability){
         this.armorRating = armorRating;
         this.durability = durability;
     }
@@ -14,5 +16,13 @@ abstract class Armor {
         }
         durability -= 1;
         return Math.max(damage - durability, 0);
+    }
+
+    public int getArmorRating() {
+        return armorRating;
+    }
+
+    public int getDurability() {
+        return durability;
     }
 }

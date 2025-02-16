@@ -1,20 +1,22 @@
+package weapon;
+
 import java.util.Random;
 
-abstract class Weapon {
+public class Weapon {
 
-    private  int damage;
-    private Random r;
+    private final int damage;
+    private final Random random;
 
-    Weapon(int damage, Random r){
+    public Weapon(int damage, Random random){
         this.damage = damage;
-        this.r = r;
+        this.random = random;
     }
 
     public int getDamage(){
-        return r.nextInt(0,damage);
+        return random.nextInt(0,damage);
     }
 
     public Random getRandom(){
-        return r;
+        return random;
     }
 }

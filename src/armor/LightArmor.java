@@ -1,8 +1,10 @@
+package armor;
+
 import java.util.Random;
 
-public class LightArmor extends Armor{
+public class LightArmor extends Armor {
     Random random;
-    LightArmor(int armorRating, int durability) {
+    public LightArmor(int armorRating, int durability) {
         super(armorRating, durability);
         random = new Random();
     }
